@@ -30,13 +30,17 @@ public class DataHolder {
         Country c1 = new Country("Norway","Europe");
         Country c2 = new Country("Senegal","Africa");
         Country c3 = new Country("New York","North America");
-        countries.addAll(List.of(c1,c2,c3));
+        countries.add(c1);
+        countries.add(c2);
+        countries.add(c3);
         countryRepository.saveAll(countries);
 
         Author a1 = new Author("David","Trajkovski",c1);
         Author a2 = new Author("Marija","Stojcheva",c2);
         Author a3 = new Author("Ana","Trajkovska",c3);
-        authors.addAll(List.of(a1,a2,a3));
+        authors.add(a1);
+        authors.add(a2);
+        authors.add(a3);
         authorRepository.saveAll(authors);
 
         Book b1 = new Book("Petar Pan", Category.FANTASY,a1,10);
@@ -46,7 +50,13 @@ public class DataHolder {
         Book b5 = new Book("Zlostorstvo i kazna", Category.THRILLER,a1,300);
         Book b6 = new Book("Proces", Category.HISTORY,a2,500);
         Book b7 = new Book("Serdarot", Category.CLASSICS,a3,1000);
-        books.addAll(List.of(b1,b2,b3,b4,b5,b6,b7));
+        books.add(b1);
+        books.add(b2);
+        books.add(b3);
+        books.add(b4);
+        books.add(b5);
+        books.add(b6);
+        books.add(b7);
         bookRepository.saveAll(books);
     }
 

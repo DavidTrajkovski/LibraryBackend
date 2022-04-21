@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/countries")
 @AllArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class CountryController {
     final CountryService countryService;
 
