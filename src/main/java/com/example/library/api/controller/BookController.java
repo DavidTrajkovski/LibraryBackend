@@ -21,7 +21,7 @@ public class BookController {
 
     //pageable
 
-    @GetMapping("/all")
+    @GetMapping(value = {"/all","/"})
     public List<Book> getAllBooks(){
         return bookService.getAll();
     }
