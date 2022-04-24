@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@CrossOrigin(origins = "https://emt-lab2-191027-frontend.herokuapp.com/")
+@CrossOrigin(origins = "https://emt-lab2-191027-frontend.herokuapp.com")
 @RequestMapping("/api/countries")
 public class CountryController {
     final CountryService countryService;
