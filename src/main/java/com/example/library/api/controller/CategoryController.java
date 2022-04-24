@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("api/categories")
-@CrossOrigin(origins = "*")
+@RequestMapping("/api/categories")
+@CrossOrigin(origins = "https://emt-lab2-191027-frontend.herokuapp.com/")
 @AllArgsConstructor
 public class CategoryController {
 

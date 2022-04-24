@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/countries")
 @AllArgsConstructor
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://emt-lab2-191027-frontend.herokuapp.com/")
+@RequestMapping("/api/countries")
 public class CountryController {
     final CountryService countryService;
 
