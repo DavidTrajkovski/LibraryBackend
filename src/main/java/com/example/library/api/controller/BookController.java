@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/books")
-@CrossOrigin(origins = "https://emt-lab2-191027-frontend.herokuapp.com")
+@CrossOrigin(origins = "https://emt-lab2-191027-frontend.herokuapp.com/")
 @AllArgsConstructor
 public class BookController {
     final BookService bookService;
@@ -32,7 +32,7 @@ public class BookController {
     }
     //ako vrakja Page ovoj metod togas trgni go getContent()
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Book> getBook(@PathVariable Long id) {
         return bookService.findBook(id)
                 .map(book -> ResponseEntity.ok().body(book))
